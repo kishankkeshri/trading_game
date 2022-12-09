@@ -41,4 +41,7 @@ def login(request):
 def user_created(request):
     
     return render(request,'user_created.html')
+def portfolio(request):
+    if request.method=='POST':
+    return render(request, 'home.html')
 

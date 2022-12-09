@@ -25,5 +25,6 @@ urlpatterns = [
     path('user_created/',views.user_created, name='user_created'),
     path('leaderboard/',views.leaderboard, name='leaderboard'),
     path('logout/', views.logout, name='logout'),
+    path('portfolio/' , views.portfolio , name="portfolio")
 
 ] 
