@@ -2,6 +2,7 @@
 from django.shortcuts import render,HttpResponse, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
+import requests
 
 # Create your views here.
 def home(request):
@@ -41,7 +42,14 @@ def login(request):
 def user_created(request):
     
     return render(request,'user_created.html')
-def portfolio(request):
-    if request.method=='POST':
-    return render(request, 'home.html')
+    
+def portfoliostock(request):
+    url = 'https://retoolapi.dev/Rvc0r1/nifty50data'
+    r = requests.get(url)
+    data = r.json()
+
+    print(data)
+    response=requests.get(data)
+    return render(request, 'home.html',{'response':response})
+
 

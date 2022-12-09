@@ -122,103 +122,108 @@ tbody {
               
             </tr>
           </thead>
-          <form>
-          <tbody>
-            <tr>
-              <td>
-                <select name="Stock1" id="stock1">
-                  <option value="ADANIENT" id="ADANIENT" name="ADANIENT">ADANIENT</option>
-                  <option value="ADANIPORTS" id="ADANIPORTS" name="ADANIPORTS">ADANIPORTS</option>
-                  <option value="" id="stock" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                  <option value="" id="" name=""></option>
-                </select>
-              </td>
-              <td>Cell 2</td>
-              <td id="display1"></td>
-              <td><input type="number" id=""></td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" id="2"></td>
-              <td>Cell 2</td>
-              <td>Cell 3</td>
-              <td><input type="number" id=""></td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" id="3"></td>
-              <td>Cell 2</td>
-              <td>Cell 3</td>
-              <td><input type="number" id=""></td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" id="4"></td>
-              <td>Cell 2</td>
-              <td>Cell 3</td>
-              <td><input type="number" id=""></td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" id="5"></td>
-              <td>Cell 2</td>
-              <td>Cell 3</td>
-              <td><input type="number" id=""></td>
-            </tr>
-            
-          </tbody>
+
+          {%for i in response%}
+          {{i.symbol}}
+          {%endfor%}
+          <form >
+            <tbody>
+              <tr>
+                <td>
+                  <select name="Stock1" id="stock1">
+                    <option value="ADANIENT" id="ADANIENT" name="ADANIENT">ADANIENT</option>
+                    <option value="ADANIPORTS" id="ADANIPORTS" name="ADANIPORTS">ADANIPORTS</option>
+                    <option value="" id="stock" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                    <option value="" id="" name=""></option>
+                  </select>
+                </td>
+                <td>Cell 2</td>
+                <td id="display1"></td>
+                <td><input type="number" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="2"></td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td><input type="number" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="3"></td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td><input type="number" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="4"></td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td><input type="number" id=""></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" id="5"></td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td><input type="number" id=""></td>
+              </tr>
+              
+            </tbody>
+
         </table>
       </form>
       </div>
@@ -240,25 +245,7 @@ tbody {
 
 
 <script>
-  var request = require('request');
 
-// replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
-var url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=AOTVSSHCSOZ24OZP';
-
-request.get({
-    url: url,
-    json: true,
-    headers: {'User-Agent': 'request'}
-  }, (err, res, data) => {
-    if (err) {
-      console.log('Error:', err);
-    } else if (res.statusCode !== 200) {
-      console.log('Status:', res.statusCode);
-    } else {
-      // data is successfully parsed as a JSON object:
-      console.log(data);
-    }
-});
   var stocks= document.querySelectorAll("#stock")
   stocks.forEach((stock)=>{
     stock.addEventListener('click',(e)=>{
@@ -268,3 +255,15 @@ request.get({
 </script>
 </body>
 </html>
+
+
+
+
+// import requests
+
+// # replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
+// url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=AOTVSSHCSOZ24OZP'
+// r = requests.get(url)
+// data = r.json()
+
+// print(data)
